@@ -3,7 +3,7 @@ import styles from '@/styles/register.module.css';
 export default function registerPage() {
 
     return (
-        <main className={`flex min-h-screen`}>
+        <main className={styles.main}>
             <form className={styles.formulario}>
                 <div className={styles.form_container}>
 
