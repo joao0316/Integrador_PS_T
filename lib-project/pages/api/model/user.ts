@@ -32,3 +32,26 @@ export async function findUserByUsername(_username:string) {
 
     return user;
 }
+
+// Funções para login
+export async function findUserLoginByEmail(_email:string, _password:string) {
+    const user = await prisma.user.findUnique({
+        where: {
+            email: _email,
+            password: _password
+        }
+    })
+
+    return user;
+}
+
+export async function findUserLoginByUsername(_username:string, _password:string) {
+    const user = await prisma.user.findUnique({
+        where: {
+            username: _username,
+            password: _password
+        }
+    })
+
+    return user;
+}
