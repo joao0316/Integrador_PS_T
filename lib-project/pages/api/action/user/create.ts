@@ -9,7 +9,7 @@ export default async (req: NextApiRequest , res: NextApiResponse) => {
 
     const { name, email, username, password, confirmPassword } = req.body;
 
-    const response = await createUser(name, email, username, password, confirmPassword);
+    const response:any = await createUser(name, email, username, password, confirmPassword);
 
     if ( response.message != undefined ) {
         return res.status(403).json(response);

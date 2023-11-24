@@ -1,16 +1,13 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { signIn } from "../../controller/UserController";
-
+import { selectMovies } from "../../controller/MovieController";
 
 export default async (req: NextApiRequest , res: NextApiResponse) => {
-    if ( req.method != 'POST' ) {
+    if ( req.method != 'GET' ) {
         return res.status(403).json({ message: 'Method not allowed' });
     }
 
-    const { login , password } = req.body;
-
-    const response:any = await signIn(login, password);
-
+    const response:any = await selectMovies();
+    
     if ( response.message != undefined ) {
         return res.status(403).json(response);
     }
