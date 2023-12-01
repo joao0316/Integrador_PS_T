@@ -29,11 +29,20 @@
     height: 90vh;
     margin-left: 10%;
     padding: 2%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .card {
-    width: 20%;
-    height: 30%;
-    background-color: black;
-    border: white 0.1rem solid ;
+    width: 20vw;
+    height: 30vh;
+    background-color: white;
+    border: black 0.1rem solid ;
+    color: black;
+    padding: 2%;
+}
+
+.card:hover{
+    background-color: rgb(197, 197, 197);
 }

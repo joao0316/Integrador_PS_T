@@ -28,3 +28,19 @@ export async function selectMovies() {
         return { message: "Something went wrong" };
     }
 }
+
+export async function findMovieByName(name:string) {
+    try {
+        const movie = await findMovieByNameModel(name);
+
+        if ( movie == undefined ) {
+            return { message: "Movie not found" };
+        }
+
+        return movie;
+
+    }
+    catch(err) {
+        return { message: "Something went wrong" };
+    }
+}

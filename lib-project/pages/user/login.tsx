@@ -3,6 +3,7 @@ import styles from '@/styles/login.module.css';
 import { setCookie , getCookie } from 'cookies-next';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function loginPage() {
 
@@ -64,6 +65,11 @@ export default function loginPage() {
                     <br />
 
                     <button className={styles.form_btn}>Enviar</button>
+
+                    <br />
+                    <br />
+                    
+                    <Link href={`/user/register`}>Registrar</Link>
                 </div>
             </form>
         </main>

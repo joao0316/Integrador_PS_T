@@ -1,6 +1,7 @@
 import styles from '@/styles/register.module.css';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function registerPage() {
 
@@ -68,6 +69,10 @@ export default function registerPage() {
                     <br />
 
                     <button className={styles.form_btn}>Enviar</button>
+
+                    <br />
+                    <br />
+                    <Link href={`/user/login`}>Já tenho uma conta</Link>
                 </div>
             </form>
         </main>
