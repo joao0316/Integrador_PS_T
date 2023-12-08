@@ -1,7 +1,11 @@
 .container {
     background-color: rgb(255, 239, 215);
     width: 40vw;
+<<<<<<< HEAD
     height: 40vw;
+=======
+    height: 55vh;
+>>>>>>> 67953972739d5b0933ed6804d833b3b7153c3f31
     border: black 0.1rem solid;
     border-radius: 20px;
     padding: 3%;
@@ -11,7 +15,11 @@
     font-size: 20px;
 }
 
+<<<<<<< HEAD
 .inputImage {
+=======
+.inputImage{
+>>>>>>> 67953972739d5b0933ed6804d833b3b7153c3f31
     height: 7vh;
 }
 
@@ -19,7 +27,11 @@
     margin-top: 3%;
 }
 
+<<<<<<< HEAD
 .container-button {
+=======
+.container button {
+>>>>>>> 67953972739d5b0933ed6804d833b3b7153c3f31
     background-color: white;
     border: black 0.1rem solid;
     border-radius: 15px;

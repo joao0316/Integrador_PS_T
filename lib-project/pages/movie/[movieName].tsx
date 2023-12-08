@@ -81,7 +81,7 @@ export default function page({ movieName }: any) {
                 {movie != undefined ?
 
                     <div className={styles.page}>
-                        <img src={imageMovie.src} className={styles.movieImage} />
+                        <img src={movie.imageURL} className={styles.movieImage} />
 
                         <div className={styles.movieInfos}>
                             <p className={styles.field}>Informações do Filme</p>
